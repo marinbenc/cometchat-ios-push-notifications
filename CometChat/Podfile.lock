@@ -1,0 +1,22 @@
+PODS:
+  - CometChatPro (2.0.8)
+  - Kingfisher (5.13.4):
+    - Kingfisher/Core (= 5.13.4)
+  - Kingfisher/Core (5.13.4)
+
+DEPENDENCIES:
+  - CometChatPro (= 2.0.8)
+  - Kingfisher (~> 5.0)
+
+SPEC REPOS:
+  trunk:
+    - CometChatPro
+    - Kingfisher
+
+SPEC CHECKSUMS:
+  CometChatPro: db5c77d09898fac13c9162b23cfb7f098fec1259
+  Kingfisher: d2279a7abece3c7f25a80cd2b7f363ca5cf3f44c
+
+PODFILE CHECKSUM: 0ff61cbe19afc31522676ab4e2610df9b39594c8
+
+COCOAPODS: 1.8.4
