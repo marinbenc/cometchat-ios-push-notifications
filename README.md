@@ -6,7 +6,7 @@ Read the full tutorial here:
 
 This example shows how to build an anonymous one-to-one chat app with a push notifications in Swift:
 
-![](screenshots/push-notifications.png)
+![](screenshots/push-notifications.PNG)
 
 ## Technology
 
