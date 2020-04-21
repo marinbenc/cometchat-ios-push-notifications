@@ -32,6 +32,7 @@
 		608DAA279B499395F7F6B462 /* Pods-CometChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CometChat.release.xcconfig"; path = "Target Support Files/Pods-CometChat/Pods-CometChat.release.xcconfig"; sourceTree = "<group>"; };
 		BE22FBDA1C50A6B45641E1D9 /* Pods-CometChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CometChat.debug.xcconfig"; path = "Target Support Files/Pods-CometChat/Pods-CometChat.debug.xcconfig"; sourceTree = "<group>"; };
 		ED07FAA3825E8E8BB5A56250 /* Pods_CometChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CometChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5597AEA2447514B00769017 /* CometChat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CometChat.entitlements; sourceTree = "<group>"; };
 		F564B94D24223171008A2CF2 /* TypingIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypingIndicatorView.swift; sourceTree = "<group>"; };
 		F5805F182325498D0037201B /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
 		F5805F1A232549C00037201B /* ContactsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTableViewCell.swift; sourceTree = "<group>"; };
@@ -104,6 +105,7 @@
 		F58DB6B122F322970018C36D /* CometChat */ = {
 			isa = PBXGroup;
 			children = (
+				F5597AEA2447514B00769017 /* CometChat.entitlements */,
 				F5FD0A3122FC7A030096E777 /* View Controllers */,
 				F58DB6C422F326010018C36D /* Cells */,
 				F5FD0A2C22FC79BE0096E777 /* Model */,
@@ -443,14 +445,15 @@
 			baseConfigurationReference = BE22FBDA1C50A6B45641E1D9 /* Pods-CometChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CometChat/CometChat.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 55C8REN3Y5;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CometChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.marinbenc.CometChat;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cometchat.CometChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -462,14 +465,15 @@
 			baseConfigurationReference = 608DAA279B499395F7F6B462 /* Pods-CometChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CometChat/CometChat.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 55C8REN3Y5;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CometChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.marinbenc.CometChat;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cometchat.CometChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

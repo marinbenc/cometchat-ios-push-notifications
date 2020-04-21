@@ -8,4 +8,5 @@ target 'CometChat' do
   # Pods for CometChat
   pod 'CometChatPro', '2.0.8'
   pod 'Kingfisher', '~> 5.0'
+  pod 'Firebase/Messaging'
 end

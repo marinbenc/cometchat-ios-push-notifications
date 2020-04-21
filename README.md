@@ -1,12 +1,12 @@
-# iOS Chat App With a Typing Indicator
+# iOS Chat App With Push Notifications
 
 Read the full tutorial here:
 
 [**>> How to Add a Typing Indicator to Your iOS Chat App**](TODO)
 
-This example shows how to build an anonymous group chat app with a typing indciator in Swift:
+This example shows how to build an anonymous one-to-one chat app with a push notifications in Swift:
 
-![](screenshots/typing-indicator.gif)
+![](screenshots/push-notifications.png)
 
 ## Technology
 
@@ -15,6 +15,7 @@ This demo uses:
 * CometChatPro 2.0.7
 * Swift 5
 * Xcode 11.3.1 or higher
+* Firebase Messaging 4.3.0
 
 ## Running the demo
 
@@ -29,6 +30,7 @@ To run the demo follow these steps:
 5. Navigate to project directory and use `pod install` command to install the pods and open **CometChat.xcworkspace** in Xcode.
 6 Update the `Constants` in [ChatService.swift](https://github.com/marinbenc/cometchat-ios-typing-indicator/blob/master/CometChat/CometChat/Model/ChatService.swift) with your newly-created app ID, API key and Region code.
 7. Run the app and login with one of the test users: superhero1, superhero2, superhero3, superhero4 or superhero5.
+8. To enable push notifications, you'll have to perform additional steps described in the tutorial.
 
 Questions about running the demo? [Open an issue](https://github.com/cometchat-pro-tutorials/TODO/issues). We're here to help ✌️
 

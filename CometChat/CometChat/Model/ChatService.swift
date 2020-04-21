@@ -8,6 +8,7 @@
 
 import Foundation
 import CometChatPro
+import FirebaseMessaging
 
 extension String: Error {}
 
@@ -81,9 +82,11 @@ final class ChatService {
         guard let self = self else { return }
         // Convert CometChat's User to our own User struct
         self.user = User(cometChatUser)
+                
         // CometChat methods are run in the background. Make sure to get
         // back to the main queue before returning control back to the caller
         DispatchQueue.main.async {
+          Messaging.messaging().subscribe(toTopic: "\(Constants.cometChatAppID)_user_\(cometChatUser.uid!)_ios")
           onComplete(.success(self.user!))
         }
       },
@@ -137,7 +140,9 @@ final class ChatService {
         }
       },
       onError: { error in
-        onComplete([])
+        DispatchQueue.main.async {
+          onComplete([])
+        }
         print("Fetching users failed with error:")
         print(error?.errorDescription ?? "unknown")
       })

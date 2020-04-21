@@ -47,7 +47,6 @@ final class ChatViewController: UIViewController {
       typingIndicator.heightAnchor.constraint(equalToConstant: 20),
       typingIndicator.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 26)
     ])
-
   }
   
   private func setTypingIndicatorVisible(_ isVisible: Bool) {
