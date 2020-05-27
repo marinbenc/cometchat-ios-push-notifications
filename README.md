@@ -4,7 +4,7 @@ Read the full tutorial here:
 
 [**>> Adding Push Notifications to your iOS Chat App**](https://www.cometchat.com/tutorials/cometchat-tutorial-adding-push-notifications-to-your-ios-chat-app)
 
-This example shows how to build an anonymous one-to-one chat app with a push notifications in Swift:
+This example shows how to build a one-to-one chat app with push notifications in Swift:
 
 ![](screenshots/push-notifications.PNG)
 
